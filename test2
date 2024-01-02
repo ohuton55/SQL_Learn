@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  `sql-project-409102.section3.items`
+WHERE
+  name LIKE '%紅茶%'

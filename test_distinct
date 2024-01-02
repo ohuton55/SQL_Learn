@@ -1,0 +1,4 @@
+SELECT
+  COUNT(*) AS cnt
+FROM
+  `sql-project-409102.section4.users`

@@ -1,0 +1,6 @@
+SELECT
+  user_id,pref
+FROM
+  `sql-project-409102.section3.users`
+ORDER BY
+  age DESC

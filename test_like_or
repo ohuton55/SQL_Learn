@@ -1,0 +1,7 @@
+SELECT
+  *
+FROM
+  `sql-project-409102.section3.users`
+WHERE
+  name LIKE "%田%" OR
+  name LIKE "%木%"
