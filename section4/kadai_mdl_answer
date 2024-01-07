@@ -1,0 +1,7 @@
+SELECT
+  COUNT(*) AS cnt
+FROM `sql-project-409102.section4.orders`
+GROUP BY
+  pref
+HAVING
+  cnt >=2

@@ -1,0 +1,5 @@
+SELECT
+  COUNT(DISTINCT(gender)) AS gender_cnt,
+  COUNT(DISTINCT(age)) AS age_cnt,
+  COUNT(DISTINCT(pref)) AS pref_cnt
+FROM `sql-project-409102.section4.users`

@@ -1,0 +1,6 @@
+SELECT
+  user_id,
+  IF (SUM(price) >=3000, "10%OFFクーポン", "5%OFFクーポン") AS flag
+FROM `sql-project-409102.section4.orders`
+GROUP BY
+  user_id

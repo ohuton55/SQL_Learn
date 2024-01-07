@@ -1,0 +1,8 @@
+SELECT
+  pref,
+  CASE
+    WHEN pref="熊本" THEN "西日本"
+    ELSE "東日本"
+    --ELSE pref <- 元のクエリの値が入る
+  END AS pref2
+FROM `sql-project-409102.section3.users`

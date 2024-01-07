@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  `sql-project-409102.section3.users`
+WHERE
+  pref NOT IN("東京","埼玉")

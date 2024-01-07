@@ -1,0 +1,11 @@
+SELECT
+  *
+FROM
+  `sql-project-409102.section3.users`
+
+WHERE
+  age BETWEEN 20 AND 29
+  AND gender = "男性"
+
+ORDER BY
+  age DESC

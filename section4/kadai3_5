@@ -1,0 +1,8 @@
+SELECT
+  DISTINCT gender,
+  COUNT(*) AS cnt
+FROM `sql-project-409102.section4.users`
+WHERE
+  age >= 25
+GROUP BY
+  gender

@@ -1,0 +1,3 @@
+SELECT
+  COUNT(DISTINCT(age)) AS cnt_age
+FROM `sql-project-409102.section4.users`

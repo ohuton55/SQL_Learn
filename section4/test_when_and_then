@@ -1,0 +1,10 @@
+SELECT
+  age,
+  CASE
+    WHEN age >=10 and age< 20 THEN "10代"
+    WHEN age >=20 and age< 30 THEN "20代"
+    WHEN age >=30 and age< 40 THEN "30代"
+    WHEN age >=40 and age< 50 THEN "40代"
+    ELSE "10歳未満"
+  END AS age2
+FROM `sql-project-409102.section3.users`

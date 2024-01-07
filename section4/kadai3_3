@@ -1,0 +1,6 @@
+SELECT
+  CASE
+    WHEN pref = "東京" OR pref = "埼玉" OR pref = "埼玉" THEN "関東"
+    ELSE pref
+  END AS pref2
+FROM `sql-project-409102.section4.users`

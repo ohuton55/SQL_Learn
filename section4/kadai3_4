@@ -1,0 +1,3 @@
+SELECT
+  IF (pref = "東京" OR pref = "埼玉" OR pref = "栃木", "関東", pref) AS pref2
+FROM `sql-project-409102.section4.users`

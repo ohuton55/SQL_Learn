@@ -1,0 +1,9 @@
+SELECT
+  gender,
+  pref,
+  COUNT(*)  AS cnt
+FROM `sql-project-409102.section3.users`
+GROUP BY
+  gender,pref
+ORDER BY
+  gender

@@ -1,0 +1,4 @@
+SELECT
+  SUM(age) AS sum_age,  --ageの合計結果
+  AVG(age) AS sum_avg   --ageの平均結果
+FROM `sql-project-409102.section3.users`
