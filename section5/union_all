@@ -1,0 +1,6 @@
+
+SELECT order_id, user_id, item_id FROM `sql-project-409102.section5.orders3`
+
+UNION ALL
+
+SELECT order_id, user_id, item_id FROM `sql-project-409102.section5.orders`

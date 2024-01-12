@@ -1,0 +1,10 @@
+SELECT
+  users.gender,
+  AVG(price) AS avg_price
+  
+FROM
+  `sql-project-409102.section5.orders_exercise` AS orders
+  INNER JOIN `sql-project-409102.section5.users_exercise` AS users
+  ON orders.user_id = users.user_id
+GROUP BY
+  gender

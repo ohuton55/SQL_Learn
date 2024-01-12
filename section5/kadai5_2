@@ -1,0 +1,8 @@
+SELECT
+  *
+FROM
+  `sql-project-409102.section5.items_exercise` AS i
+  LEFT JOIN `sql-project-409102.section5.orders_exercise` AS o
+  ON i.item_id = o.item_id
+WHERE
+  o.order_id IS NULL
