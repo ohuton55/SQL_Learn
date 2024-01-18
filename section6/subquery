@@ -1,0 +1,7 @@
+SELECT
+  *
+FROM
+  `sql-project-409102.section6.items`
+WHERE
+  price >=
+(SELECT AVG(price) AS avg_price FROM `sql-project-409102.section6.items`)

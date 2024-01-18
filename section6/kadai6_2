@@ -1,0 +1,13 @@
+WITH view1 AS (
+  SELECT
+    AVG(age) AS avg_age
+  FROM
+    `sql-project-409102.section4.users`
+)
+
+SELECT
+  *
+FROM
+  `sql-project-409102.section4.users`
+WHERE
+ age >= (SELECT * FROM view1)

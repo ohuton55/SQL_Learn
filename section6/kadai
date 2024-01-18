@@ -1,0 +1,28 @@
+WITH view1 AS (
+SELECT *
+  FROM `sql-project-409102.section6.users` AS users
+  INNER JOIN `sql-project-409102.section6.orders` AS orders
+  ON users.user_id = orders.user_id
+),
+view2 AS (
+  SELECT
+    age,
+    CASE
+      WHEN age >= 10 AND age <20 THEN "10代"
+      WHEN age >= 20 AND age <30 THEN "20代"
+      WHEN age >= 30 AND age <40 THEN "30代"
+      WHEN age >= 40 AND age <50 THEN "40代"
+    END AS nendai,
+    price
+  FROM view1
+)
+
+SELECT
+  DISTINCT nendai,
+  SUM(price) AS sum_nendai
+FROM
+  view2
+GROUP BY
+  nendai
+ORDER BY
+  nendai

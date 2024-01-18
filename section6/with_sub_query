@@ -1,0 +1,14 @@
+WITH table1 AS (
+  SELECT *
+  FROM `sql-project-409102.section6.orders2` AS orders
+  INNER JOIN `sql-project-409102.section6.items` AS items
+  ON orders.item_id = items.item_id
+),
+table2 AS ( SELECT AVG(price) AS avg_price FROM table1 )
+
+SELECT 
+  user_id,
+  price
+FROM table1
+WHERE
+  price > ( SELECT * FROM table2 )

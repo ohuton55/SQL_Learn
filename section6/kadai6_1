@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM `sql-project-409102.section4.users`
+
+WHERE
+  age >= ( SELECT AVG(age) AS avg_age FROM `sql-project-409102.section4.users` )
