@@ -1,0 +1,14 @@
+WITH order2 AS (
+  SELECT
+    TIMESTAMP_TRUNC(created, month) AS tukigoto
+  FROM
+    `sql-project-409102.section7.orders`
+)
+
+SELECT
+  tukigoto,
+  COUNT(*) AS cnt
+FROM
+  order2
+GROUP BY
+  tukigoto

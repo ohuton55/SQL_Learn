@@ -1,0 +1,5 @@
+SELECT
+  CURRENT_DATETIME() AS noq_datetime, --UTCなし（ミリ秒あり）
+  CURRENT_TIMESTAMP() AS now_timestamp, -- UTCつき（ミリ秒あり）
+  CURRENT_DATE() AS now_date, -- 日付のみ
+  CURRENT_TIME() AS now_time  -- 時刻のみ（ミリ秒あり）

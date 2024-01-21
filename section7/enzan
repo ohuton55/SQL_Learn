@@ -1,0 +1,7 @@
+SELECT
+  like_cnt + view_cnt AS tashizan,
+  like_cnt - view_cnt AS hikizan,
+  like_cnt * view_cnt AS kakezan,
+  like_cnt / view_cnt AS warizan
+
+FROM `sql-project-409102.section7.action_logs`

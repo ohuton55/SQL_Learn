@@ -1,0 +1,3 @@
+SELECT
+  SAFE_DIVIDE(like_cnt, buy_cnt) AS rate
+FROM `sql-project-409102.section7.action_logs3`

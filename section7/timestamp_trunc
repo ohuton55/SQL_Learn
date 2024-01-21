@@ -1,0 +1,6 @@
+SELECT
+  created,
+  TIMESTAMP_TRUNC(created, month) AS month
+FROM `sql-project-409102.section7.orders`
+ORDER BY
+created
