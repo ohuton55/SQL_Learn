@@ -1,0 +1,4 @@
+SELECT
+  created,
+  CONCAT(ROUND((like_cnt / view_cnt)* 100), "%") AS rate_like
+FROM `sql-project-409102.section7.action_logs4`
