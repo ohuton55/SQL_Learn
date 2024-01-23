@@ -1,0 +1,5 @@
+SELECT
+  CEIL(2.1) AS _2_1,
+  CEIL(2.4) AS _2_4,
+  CEIL(2.5) AS _2_5,
+  CEIL(2.9) AS _2_9

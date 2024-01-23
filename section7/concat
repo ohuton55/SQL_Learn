@@ -1,0 +1,14 @@
+
+SELECT
+  last_name,
+  first_name,
+  CONCAT(last_name, first_name) AS name,
+  CASE
+    WHEN pref="東京" THEN "東京都"
+    WHEN pref="大阪" THEN "大阪府"
+    WHEN pref="京都" THEN "京都府"
+    WHEN pref="北海道" THEN "北海道"
+  ELSE
+    CONCAT (pref, "県")
+  END AS pref2
+FROM `sql-project-409102.section7.users`

@@ -1,0 +1,5 @@
+SELECT
+  FLOOR(2.1) AS _2_1,
+  FLOOR(2.4) AS _2_4,
+  FLOOR(2.5) AS _2_5,
+  FLOOR(2.9) AS _2_9

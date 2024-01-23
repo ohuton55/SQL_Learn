@@ -1,0 +1,5 @@
+SELECT
+  ROUND(2.1) AS _2_1,
+  ROUND(2.4) AS _2_4,
+  ROUND(2.5) AS _2_5,
+  ROUND(2.9) AS _2_9
